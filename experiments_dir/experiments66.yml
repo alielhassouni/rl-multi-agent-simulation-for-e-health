@@ -1,0 +1,29 @@
+-
+    name: 'ActivitySimulation'
+    write_to_database: True
+    db_name: experiment66
+    environment:
+        class: 'MultiAgentSimulation'
+        number_days_warm_up: 7
+        number_days_learn: 7
+        number_days_apply: 7
+        number_agents: 25
+        time_granularity: 1
+        results_path: '/Users/alielhassouni/Desktop/Simulation/results/'
+    learner:
+        class: 'BasicLearner'
+        Algorithm: 'Q'
+        Clustering: 'Pooled'
+        Distance: 'dtw'
+    agent:
+        class: 'Agent'
+        activities:
+            - 'sleep'
+            - 'breakfast'
+            - 'lunch'
+            - 'dinner'
+            - 'work'
+            - 'workout'
+        states:
+            - 'ACTIVE'
+            - 'IDLE'

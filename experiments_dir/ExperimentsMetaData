@@ -1,0 +1,74 @@
+____________________________________________________
+
+Experiment 1:
+____________________________________________________
+- number_days_warm_up: 14
+- number_days_learn: 14
+- number_days_apply: 14
+- number_agents: 100
+- Pooled (all agents as one group).
+- Q learning 
+	- Parameters
+		- Actions: [0, 1]
+		- Epsilon = 0.0001
+		- Alpha = 0.05
+		- Gamma = 0.95
+____________________________________________________
+
+Output:
+____________________________________________________
+- Duration in hours: 9:01:43
+- Stored in: Experiments: Experiment1
+
+____________________________________________________
+
+Experiment 2:
+____________________________________________________
+- number_days_warm_up: 14
+- number_days_learn: 14
+- number_days_apply: 14
+- number_agents: 100
+- Pooled (all agents as one group).
+- LSPI 
+	- Parameters:
+		- Base features representation : Fixed Sparse Representation 
+		- Discount = 0.95
+		- Explore = 0.01  
+	    - tie_breaking_strategy = FirstWins
+	    - max_iterations = 10,
+	    - epsilon = 0.0001
+- Add a negative reward of 0.5 for rejecting intervention
+____________________________________________________
+
+Output:
+____________________________________________________
+- Duration in hours: 2:49:50
+- Stored in: Experiments: Experiment2
+
+____________________________________________________
+
+Experiment : 3
+____________________________________________________
+- number_days_warm_up: 14
+- number_days_learn: 14
+- number_days_apply: 14
+- number_agents: 100
+- Clustering: Grouped
+	- Clustering with K-medoids 
+	- Silhouete score 
+	- K between 2 and 12
+	- Day by day comparison using lower bound of Keogh 
+- Q learning 
+	- Parameters
+		- Actions: [0, 1]
+		- Epsilon = 0.0001
+		- Alpha = 0.05
+		- Gamma = 0.95
+- Add a negative reward of 0.5 for rejecting intervention
+
+____________________________________________________
+
+Output:
+____________________________________________________
+- Duration in hours: 
+- Stored in: Experiments: Experiment3

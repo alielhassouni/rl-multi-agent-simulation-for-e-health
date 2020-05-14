@@ -1,0 +1,29 @@
+-
+    name: 'ActivitySimulation'
+    write_to_database: True
+    db_name: experiment18
+    environment:
+        class: 'MultiAgentSimulation'
+        number_days_warm_up: 120
+        number_days_learn: 120
+        number_days_apply: 30
+        number_agents: 100
+        time_granularity: 1
+        results_path: '/Users/alielhassouni/Desktop/Simulation/results/'
+    learner:
+        class: 'BasicLearner'
+        Algorithm: 'LSPI'
+        Clustering: 'Separate'
+        Distance: 'dtw'
+    agent:
+        class: 'Agent'
+        activities:
+            - 'sleep'
+            - 'breakfast'
+            - 'lunch'
+            - 'dinner'
+            - 'work'
+            - 'workout'
+        states:
+            - 'ACTIVE'
+            - 'IDLE'

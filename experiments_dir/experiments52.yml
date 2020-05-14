@@ -1,0 +1,29 @@
+-
+    name: 'ActivitySimulation'
+    write_to_database: True
+    db_name: experiment52
+    environment:
+        class: 'MultiAgentSimulation'
+        number_days_warm_up: 30
+        number_days_learn: 90
+        number_days_apply: 30
+        number_agents: 250
+        time_granularity: 1
+        results_path: '/Users/alielhassouni/Desktop/Simulation/results/'
+    learner:
+        class: 'BasicLearner'
+        Algorithm: 'Q'
+        Clustering: 'Separate'
+        Distance: 'dtw'
+    agent:
+        class: 'Agent'
+        activities:
+            - 'sleep'
+            - 'breakfast'
+            - 'lunch'
+            - 'dinner'
+            - 'work'
+            - 'workout'
+        states:
+            - 'ACTIVE'
+            - 'IDLE'

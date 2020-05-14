@@ -1,0 +1,30 @@
+-
+    name: 'ActivitySimulation'
+    write_to_database: True
+    db_name: experiment88
+    environment:
+        class: 'MultiAgentSimulation'
+        number_days_warm_up: 7
+        number_days_learn: 100
+        number_days_apply: 0
+        number_agents: 100
+        time_granularity: 1
+        results_path: '/Users/alielhassouni/Desktop/Simulation/results/'
+    learner:
+        class: 'BasicLearner'
+        Algorithm: 'LSPI'
+        Clustering: 'Grouped'
+        Cluster_type: 'KMedoids'
+        Distance: 'dtw'
+    agent:
+        class: 'Agent'
+        activities:
+            - 'sleep'
+            - 'breakfast'
+            - 'lunch'
+            - 'dinner'
+            - 'work'
+            - 'workout'
+        states:
+            - 'ACTIVE'
+            - 'IDLE'

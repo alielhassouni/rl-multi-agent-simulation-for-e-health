@@ -1,0 +1,32 @@
+-
+    name: 'ActivitySimulation'
+    write_to_database: True
+    db_name: experiment_102_LSPI_Normal_Grouped_KMedoids_DTW_set2
+    environment:
+        class: 'MultiAgentSimulation'
+        number_days_warm_up: 7
+        number_days_learn: 30
+        number_days_apply: 0
+        profile_type: 1
+        number_agents: 25
+        time_granularity: 1
+        results_path: '/Users/alielhassouni/Desktop/Simulation/results/'
+    learner:
+        class: 'BasicLearner'
+        Algorithm: 'LSPI'
+        Features: 'Normal'
+        Clustering: 'Grouped'
+        Cluster_type: 'KMedoids'
+        Distance: 'dtw'
+    agent:
+        class: 'Agent'
+        activities:
+            - 'sleep'
+            - 'breakfast'
+            - 'lunch'
+            - 'dinner'
+            - 'work'
+            - 'workout'
+        states:
+            - 'ACTIVE'
+            - 'IDLE'

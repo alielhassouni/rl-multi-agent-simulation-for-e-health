@@ -1,0 +1,192 @@
+{
+	"activity_profiles"	:	{
+
+		"type_1_tight_schedule" :	{
+			
+			"sleep"	: { 
+				"starting_time_hour_range"	:	[22,23],
+				"duration_hour_range"	:	[6,7],
+				"standard_deviation_seconds"	:	[1800],
+				"priority_activities"	:	["work"],
+				"probability_performing_activity_per_weekday"	:	[1,1,1,1,1,1,1]
+			},
+
+			"breakfast"	: {
+				"starting_time_hour_range"	:	[7,7.5],
+				"duration_hour_range"	:	[0.15,0.25],
+				"standard_deviation_seconds"	:	[60],
+				"priority_activities"	:	["work"],
+				"probability_performing_activity_per_weekday"	:	[1,1,1,1,1,1,1]
+			},
+
+			"lunch"	: {
+				"starting_time_hour_range"	:	[12,12],
+				"duration_hour_range"	:	[0.25,0.50],
+				"standard_deviation_seconds"	:	[60],
+				"priority_activities"	:	[],
+				"probability_performing_activity_per_weekday"	:	[1,1,1,1,1,1,1]
+			},
+
+			"dinner"	: {
+				"starting_time_hour_range"	:	[18,20],
+				"duration_hour_range"	:	[0.5,1],
+				"standard_deviation_seconds"	:	[60],
+				"priority_activities"	:	[],
+				"probability_performing_activity_per_weekday"	:	[1,1,1,1,1,1,1]
+
+			},
+
+			"work"	: {
+				"starting_time_hour_range"	:	[8,9.5],
+				"duration_hour_range"	:	[9,10.5],
+				"standard_deviation_seconds"	:	[1800],
+				"priority_activities"	:	[],
+				"probability_performing_activity_per_weekday"	:	[1,1,1,1,1,0.5,0.2]
+
+			},
+
+			"workout"	: {
+				"starting_time_hour_range"	:	[19.5,20.5],
+				"duration_hour_range"	:	[0.5,1],
+				"standard_deviation_seconds"	:	[60],
+				"priority_activities"	:	[],
+				"probability_performing_activity_per_weekday"	:	[0, 0, 0, 0, 0, 0, 0]
+
+			}
+
+		},
+
+		"type_2_normal_schedule" :	{
+
+			"sleep"	: {
+				"starting_time_hour_range"	:	[21,23],
+				"duration_hour_range"	:	[8,9],
+				"standard_deviation_seconds"	:	[1800],
+				"priority_activities"	:	["work"],
+				"probability_performing_activity_per_weekday"	:	[1,1,1,1,1,1,1]
+			},
+
+			"breakfast"	: {
+				"starting_time_hour_range"	:	[8,9],
+				"duration_hour_range"	:	[0.25,0.5],
+				"standard_deviation_seconds"	:	[60],
+				"priority_activities"	:	["work"],
+				"probability_performing_activity_per_weekday"	:	[1,1,1,1,1,1,1]
+			},
+
+			"lunch"	: {
+				"starting_time_hour_range"	:	[12,14],
+				"duration_hour_range"	:	[0.25,0.5],
+				"standard_deviation_seconds"	:	[60],
+				"priority_activities"	:	[],
+				"probability_performing_activity_per_weekday"	:	[1,1,1,1,1,1,1]
+			},
+
+			"dinner"	: {
+				"starting_time_hour_range"	:	[19,20.5],
+				"duration_hour_range"	:	[0.5,1],
+				"standard_deviation_seconds"	:	[60],
+				"priority_activities"	:	[],
+				"probability_performing_activity_per_weekday"	:	[1,1,1,1,1,1,1]
+
+			},
+
+			"work"	: {
+				"starting_time_hour_range"	:	[9,9.5],
+				"duration_hour_range"	:	[8,8],
+				"standard_deviation_seconds"	:	[1800],
+				"priority_activities"	:	[],
+				"probability_performing_activity_per_weekday"	:	[1,1,1,1,0,0,0]
+
+			},
+
+			"workout"	: {
+				"starting_time_hour_range"	:	[17,21],
+				"duration_hour_range"	:	[1,1],
+				"standard_deviation_seconds"	:	[60],
+				"priority_activities"	:	[],
+				"probability_performing_activity_per_weekday"	:	[0, 0, 0, 0, 0, 0, 0]
+
+			}
+
+		},
+
+		"type_3_light_schedule" :	{
+
+			"sleep"	: {
+				"starting_time_hour_range"	:	[21,23.5],
+				"duration_hour_range"	:	[8,10],
+				"standard_deviation_seconds"	:	[1800],
+				"priority_activities"	:	["work"],
+				"probability_performing_activity_per_weekday"	:	[1,1,1,1,1,1,1]
+			},
+
+			"breakfast"	: {
+				"starting_time_hour_range"	:	[7,10],
+				"duration_hour_range"	:	[0.50,0.75],
+				"standard_deviation_seconds"	:	[60],
+				"priority_activities"	:	["work"],
+				"probability_performing_activity_per_weekday"	:	[1,1,1,1,1,1,1]
+			},
+
+			"lunch"	: {
+				"starting_time_hour_range"	:	[12,14],
+				"duration_hour_range"	:	[0.5,0.75],
+				"standard_deviation_seconds"	:	[60],
+				"priority_activities"	:	[],
+				"probability_performing_activity_per_weekday"	:	[1,1,1,1,1,1,1]
+			},
+
+			"dinner"	: {
+				"starting_time_hour_range"	:	[18,20],
+				"duration_hour_range"	:	[0.5,1],
+				"standard_deviation_seconds"	:	[60],
+				"priority_activities"	:	[],
+				"probability_performing_activity_per_weekday"	:	[1,1,1,1,1,1,1]
+
+			},
+
+			"work"	: {
+				"starting_time_hour_range"	:	[8,9],
+				"duration_hour_range"	:	[8,8],
+				"standard_deviation_seconds"	:	[1800],
+				"priority_activities"	:	[],
+				"probability_performing_activity_per_weekday"	:	[0,0,0,0,0,0,0]
+
+			},
+
+			"workout"	: {
+				"starting_time_hour_range"	:	[15,21.5],
+				"duration_hour_range"	:	[0.5,1],
+				"standard_deviation_seconds"	:	[60],
+				"priority_activities"	:	[],
+				"probability_performing_activity_per_weekday"	:	[0, 0, 0, 0, 0, 0, 0]
+
+			}
+
+		}
+
+	},
+
+	"planning_profiles"	:	{
+		"type_1_chronic_planner" :	{
+			"preferred_planning_horizon_in_hours_min" : 3,
+			"preferred_planning_horizon_in_hours_mean" : 21,
+			"standard_deviation_in_hours" : 0.1
+		},
+
+		"type_2_spontaneous" :	{
+			"preferred_planning_horizon_in_hours_min" : 0,
+			"preferred_planning_horizon_in_hours_mean" : 6,
+			"standard_deviation_in_hours" : 0.1
+		},
+
+		"type_3_mixed_planner_and_spontaneous" :	{
+			"preferred_planning_horizon_in_hours_min" : 0,
+			"preferred_planning_horizon_in_hours_mean" : 24,
+			"standard_deviation_in_hours" : 0.1
+		}
+
+	}
+	
+}
